@@ -1,0 +1,22 @@
+<div class="card m-0">
+    <div class="card-body">
+        <span>
+            Name: {{ characterInfo.name }}<br>
+        </span>
+        <span>
+            Species: "{{ speciesInfo.name ? speciesInfo.name : "The character hasn't any species" }}"
+        </span><br>
+        <span>
+            Movies:
+            <span *ngFor="let title of characterFilms">
+                "{{ title }}"
+            </span>
+        </span><br>
+        <span>
+            Spaceships:
+            <span *ngFor="let name of characterStarships">
+                "{{ name }}"
+            </span>
+        </span><br>
+    </div>
+</div>
